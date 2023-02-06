@@ -1,0 +1,29 @@
+const db = require("");
+
+module.exports ={
+    find,
+    findById,
+    add,
+    remove,
+    update
+}
+
+async function find(){
+  
+}
+async function findById(id){   
+    // return await
+}
+
+async function add(Body){
+   
+}
+
+async function update(id,body){
+   
+  
+}
+
+async function remove(id){
+ 
+}
