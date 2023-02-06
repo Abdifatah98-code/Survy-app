@@ -1,7 +1,7 @@
 # Survy-app
 simple-app about survey
 
-1- make .env file for the root of application exp->index.js, .env 
+1- make .env file for the root of application example -> index.js, .env 
 
 2-make nmp i 
 
