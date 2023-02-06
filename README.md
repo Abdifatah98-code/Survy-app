@@ -3,12 +3,11 @@ simple-app about survey
 
 1- make .env file for the root of application example -> index.js, .env 
 
-2-make nmp i 
+2-make ( npm i ) command // or // (npm install) 
 
-to run application 
+  To run application use 
 
-use 
- 3- npm start  // or // node index.js 
+3- npm start  // or // node index.js 
 
 
       -- feel free
