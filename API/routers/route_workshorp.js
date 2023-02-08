@@ -20,10 +20,19 @@ router.get("/", async (req, res) => {
   }
 });
 
+
+
+router.get("/workshope_count", async (req, res) => {
+  var countWorkShops = workShope.find();
+  countWorkShops.count(function (err, count) {
+    if (err) res.status(500).json({ data: "error" });
+    else res.status(500).json({ workshops: count });
+  });
+  
+});
+
 router.post("/post", async (req, res) => {
  
-
-
   try {
     const obj = {
         name: req.body.name,
@@ -33,7 +42,6 @@ router.post("/post", async (req, res) => {
         description: req.body.description,
       };
 
-    console.log(obj);
     await new workShope(obj)
       .save()
       .then((success) => {
