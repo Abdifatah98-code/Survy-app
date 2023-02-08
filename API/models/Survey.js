@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-const { uuid } = require('uuidv4');
 const surveySchema = new mongoose.Schema({
     name: {
         type: String,
@@ -11,9 +10,11 @@ const surveySchema = new mongoose.Schema({
     },
     rate:{
         type: Number,
-        default:0
+        default:0  
     }, 
 }, {timestamps: true})
+
+// 1 ->excellent,2-very good,3->good,4->bad
 
 const survey = mongoose.model('survey', surveySchema)
 module.exports = survey

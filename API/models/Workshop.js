@@ -6,20 +6,20 @@ const workShopeScheme = new mongoose.Schema({
     default: "",
   },
   startDate: {
-    typed: Date,
-    default: Date.now(),
+    type:  Date,
+    
   },
   endDate: {
-    typed: Date,
-    default: Date.now(),
+    type:   Date,
+    // default: "",
   },
-  participantNumber: {
-    typed: Number,
-    default: 0,
+  participant:{
+    type: Number,
+    default: "",
   },
-  Description: {
-    typed: String,
-    default: '',
+  description: {
+    type: String,
+    // default: "",
   },
 }, {timestamps: true});
 
