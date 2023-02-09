@@ -12,6 +12,10 @@ const surveySchema = new mongoose.Schema({
         type: Number,
         default:0  
     }, 
+    comment: {
+        type: String,
+        default: ''
+    },
 }, {timestamps: true})
 
 // 1 ->excellent,2-very good,3->good,4->bad
