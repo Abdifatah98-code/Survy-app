@@ -65,7 +65,7 @@ router.get("/members", async (req, res) => {
   var query = survey_route.find();
   query.count(function (err, count) {
     if (err) res.status(500).json({ data: "error" });
-    else res.status(500).json({ data: count });
+    else res.status(200).json({ data: count });
   });
 });
 router.get("/filter", async (req, res) => {
